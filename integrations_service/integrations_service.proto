@@ -1,0 +1,6 @@
+syntax="proto3";
+
+package integrations_service;
+option go_package="genproto/integrations_service";
+
+import "integrations.proto";

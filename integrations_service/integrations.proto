@@ -1,0 +1,11 @@
+syntax="proto3";
+
+package integrations_service;
+
+option go_package="genproto/integrations_service";
+
+import "google/protobuf/empty.proto";
+
+service IntegrationsService {
+    rpc StartPulling (google.protobuf.Empty) returns (google.protobuf.Empty) {}
+}
