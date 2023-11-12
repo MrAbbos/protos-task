@@ -1,0 +1,19 @@
+syntax="proto3";
+
+package content_service;
+
+option go_package="genproto/content_service";
+
+service ContentService {
+    rpc CreateContent (CreateContentRequest) returns (CreateContentResponse) {}
+}
+
+message CreateContentRequest{
+    string title=1;
+    string content=2;
+    string author=3;
+}
+
+message CreateContentResponse{
+    string id=1;
+}
