@@ -11,5 +11,5 @@ service IntegrationsService {
 }
 
 message  ContentPullingRequest{
-    int64 page=1;
+    repeated int64 page=1;
 }
