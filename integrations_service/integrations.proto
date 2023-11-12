@@ -11,10 +11,5 @@ service IntegrationsService {
 }
 
 message  ContentPullingRequest{
-    int32 limit=1;
-    int32 offset=2;
-}
-
-message test{
-    string test=1;
+    int64 page=1;
 }
